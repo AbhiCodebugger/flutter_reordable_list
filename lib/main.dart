@@ -40,12 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: ReorderableListView(
-          header: Center(
+          header: const Center(
             heightFactor: 2,
             child: Text(
-              'List of reordable items',
-              style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-                  color: Colors.blueGrey, fontWeight: FontWeight.bold),
+              'List of Reorderable items',
+              style: TextStyle(
+                  color: Colors.blueGrey,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30),
             ),
           ),
           padding: const EdgeInsets.all(10),
